@@ -44,10 +44,13 @@ header {
     padding: 5px;
 }
 
-picture.foto-head {
+.foto-head {
+    background-color: var(--cor2);
     display:block;
-    width: 100%;
+    width: 65%;
     margin: auto;
+    border-radius: 10px;
+    box-shadow: -1px 3px 6px 1px rgba(0, 0, 0, 0.288);
 }
 
 header img {
@@ -71,7 +74,6 @@ header a:hover {
     background-color: var(--cor5);
     border-radius: 10px;
     color: var(--cor1);
-    font-size: 1.6em;
     transition-duration: 0.4s;
 }
 
@@ -120,11 +122,6 @@ li {
     background-image: linear-gradient(to right, var(--cor2), white);
     padding: 3px;
     color: white;
-}
-
-li:hover {
-    color: var(--cor3);
-    transition-duration: 0.2s;
 }
 
 footer {
