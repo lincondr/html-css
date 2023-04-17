@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf')
+    format('opentype');
+}
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #05cc69, #216342);
+    width: 100%;
+    color: white;
+    margin: 0px 10px;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+header > p {
+    text-align: center;
+    margin: 40px 20px;
+    color: rgba(199, 197, 197, 0.849);
+    text-shadow: -1px 1px 8px rgba(0, 0, 0, 0.473);
+}
+
+header > a {
+    text-decoration: none;
+    margin: 10px 10px 10px 30px;
+    color: white;
+    font-weight: bold;
+}
+
+header > a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    width: 55%;
+}
+
+img {
+    max-width: 95%;
+    display: block;
+    margin: auto;
+}
+
+p {
+    text-indent: 30px;
+    text-align: justify;
+    margin: 10px 20px
+}
+
+main {
+    background-color: white;
+}
+
+.linkm {
+    text-decoration: none;
+    color: #048d49;
+}
+
+.linkm::before {
+    content: "✈ ";
+}
+
+.linkm:hover {
+    text-decoration: underline;
+}
+
+main > h1 {
+    font-family: 'idroid';
+    color: rgba(7, 94, 7, 0.877);
+    margin: 0px 5px 10px 5px;
+    padding: 10px 5px;
+}
+
+main > h2 {
+    font-family: 'idroid';
+    background-color: rgba(127, 255, 212, 0.466);
+    color: rgba(7, 94, 7, 0.877);
+    margin-left: 15px;
+}
+
+.caixa-video {
+    width: 94%;
+    margin: 0;
+}
+
+.video {
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+    border: 15px solid darkgreen; 
+}
+
+div.extra {
+    background-color: rgba(148, 250, 216, 0.644);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.extra > h1 {
+    background-color: #13a55c;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1em;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.list1, .list2 {
+    display: inline-block;
+    margin: 1px 50px 10px 0px;
+}
+
+.extra > .p1 {
+    padding: 1px 1px;
+}
+
+.extra > .p2 {
+    padding: 1px 1px 30px 1px
+}
+
+.lastp {
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: green;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer > p {
+    text-align: center;
+    color: rgba(194, 194, 194, 0.836);
+    margin: 0;
+    padding: 5px;
+    text-shadow: -2px 2px 9px rgba(0, 0, 0, 0.507);
+}

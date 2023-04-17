@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Hollow';
+    src: url('/fontes/Adventure.otf') format('opentype');
+}
+
+:root {
+    --cor1: #fa5e56;
+    --cor2: #349CFA;
+    --cor3: #2D70AD;
+    --cor4: #EFFA66;
+    --cor5: #AD2B24;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Hollow', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+main p {
+    padding: 10px;
+    line-height: 2em;
+}
+
+nav {
+    text-align: center;
+    margin: 7px;
+    max-height: 30px;
+}
+
+header {
+    background-color: var(--cor4);
+    padding: 5px;
+}
+
+picture.foto-head {
+    display:block;
+    width: 100%;
+    margin: auto;
+}
+
+header img {
+    display: block;
+    margin: 1px auto;
+    width: 80%;
+    padding: 2px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    color: var(--cor5);
+    padding-right: 12px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+}
+
+header a:hover {
+    background-color: var(--cor5);
+    border-radius: 10px;
+    color: var(--cor1);
+    font-size: 1.6em;
+    transition-duration: 0.4s;
+}
+
+div#main {
+    max-width: 80%;
+    margin: 0px auto 5px auto;
+    box-shadow: -3px 4px 18px 1px rgba(0, 0, 0, 0.301);
+}
+
+.foto-main > img {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    box-shadow: -2px 3px 7px 1px rgba(0, 0, 0, 0.308);
+}
+
+main h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    text-shadow: -5px 4px 6px rgba(0, 0, 0, 0.253);
+}
+
+#main {
+    background-color: white;
+    text-align: justify;
+    padding: 3px 10px;
+}
+
+.gear5 {
+    display: block;
+    margin: auto;
+    padding-top: 8px;
+    border: 5px solid var(--cor3);
+    border-radius: 180px;
+}
+
+#main > ul {
+    list-style-position: inside;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+li {
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor2), white);
+    padding: 3px;
+    color: white;
+}
+
+li:hover {
+    color: var(--cor3);
+    transition-duration: 0.2s;
+}
+
+footer {
+    background-color: var(--cor5);
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+
+
