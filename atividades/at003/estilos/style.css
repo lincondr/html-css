@@ -80,7 +80,7 @@ header a:hover {
 div#main {
     max-width: 80%;
     margin: 0px auto 5px auto;
-    box-shadow: -3px 4px 18px 1px rgba(0, 0, 0, 0.301);
+    box-shadow: inset -3px 4px 18px 1px rgba(0, 0, 0, 0.301);
 }
 
 .foto-main > img {
