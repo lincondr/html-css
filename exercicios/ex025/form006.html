@@ -5,30 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        .botoes {
+            display: block;
+            margin: 10px auto 0px auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplos de Formulario</h1>
     
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="icor">Cor: </label>
-            <input type="color" name="cor" id="icor" value="#0000ff">
-        </p>
-
-        <p>
-            <label for="inivel">Nivel de satisfação: </label>
-            <input type="range" name="nivel" id="inivel" min="1" max="10">
-        </p>
-
-        <p>
-            <label for="ifoto">Foto de perfil: </label>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Seleçao de cor</legend>
+            <p>
+                <label for="icol">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Barra de Satisfação</legend>
+            <p>
+                <label for="inivel">Nivel de Satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="10" value="4">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Envio de arquivo</legend>
+            <label for="ifoto">Foto de Perfil</label>
             <input type="file" name="foto" id="ifoto">
-        </p>
-
+        </fieldset>
         <!-- Elementos que passam de 3.000 bytes- usar o metodo POST -->
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar" class="botoes">
+        <input type="reset" value="Limpar" class="botoes">
     </form>
 </body>
 </html>
