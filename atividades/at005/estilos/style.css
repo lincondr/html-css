@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+html {
+    min-height: 97vh;
+}
+
+div#img1 {
+    height: 100vh;
+    
+    background-image: url('../imagens/image-2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#main-title {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(39, 39, 39, 0.479);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+div#img2 {
+    height: 45vh;
+    background-image: url('../imagens/image-3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+#img2 h1 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+
+div#img3 {
+    height: 45vh;
+    background-image: url('../imagens/image-4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3 h1 {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+
+div#img4 {
+    height: 100vh;
+    background-image: url('../imagens/image-5.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div > h1#last-h1 {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    background-color: rgb(48, 44, 44);
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.281);
+}
