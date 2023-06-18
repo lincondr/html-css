@@ -8,38 +8,38 @@
 </head>
 <body>
     <form action="cadastro.php" method="post">
-        <p>
-            <label for="iest">Estado: </label>
-            <select name="est" id="iest">
-                <option value="" selected>--- Escolha ---</option>
-                <optgroup label="Região Sudeste">
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">Sao Paulo</option>
-                    <option value="MG">Minas Gerais</option>
-                </optgroup>
+       <p>
+        <label for="iest">Estado:</label>
+        <select name="est" id="iest">
+            <optgroup label="Regiao Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">Sao Paulo</option>
+            </optgroup>
 
-                <optgroup label="Região Nordeste">
-                    <option value="MA">Maranão</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                </optgroup>
-            </select>
-        </p>
+            <optgroup label="Regiao Nordeste">
+                <option value="MA">Maranhao</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+       </p>
 
-        <p>
-            <label for="iprof">Profissão: </label>
-            <input type="text" name="prof" id="iprof" list="lsprof"> 
-            <datalist id="lsprof">
-                <option value="Gam">Gamer</option>
-                <option value="Coz">Cozinheiro</option>
-                <option value="You">Youtuber</option>
-            </datalist>
-        </p>
+       <p>
+        <label for="iprof">Profissao</label>
+        <input type="text" name="prof" id="iprof" list="lsiprof">
+        <datalist id="lsiprof">
+            <option value="PAD">Padeiro</option>
+            <option value="SEG">Segurança</option>
+            <option value="SUP">Supervisor</option>
+            <option value="ADM">Administrador</option>
+        </datalist>
+       </p>
+       <p>
+        <label for="icomment"></label>
+        <textarea name="comment" id="icomment" cols="30" rows="10"></textarea>
+       </p>
 
-        <p>
-            <label for="imsg">Mensagem: </label><br>
-            <textarea name="msg" id="imsg" cols="45" rows="10" placeholder="sua mensagem"></textarea>
-        </p>
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
