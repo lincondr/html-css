@@ -5,14 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        body {
+            font-family: courier new,sans-serif;
+        }
+        .formulario {
+            background-color: lightgray;
+            height: 400px;
+            width: 400px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        #numeros {
+            padding: 10px;
+        }
+
+        #botoes {
+            background-color: lightblue;
+            margin: 38vh auto;
+            padding: 5px;
+            box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.315);
+            width: 380px;
+
+        }
+    </style>
 </head>
 <body>
     <h1>Formulario</h1>
-    <form action="cadastro.php" method="post">
-        <p><label for="inome">Nome:</label>
-        <input type="text" name="nome" id="inome" required >
-        </p>
+    <div class="formulario">
+        <form action="cadastro.php" method="get">
+            <div id="numeros">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="iidade">Sua Idade</label>
+                    <input type="range" name="Idade" id="iidade" min="10" max="100" oninput="sidade.innerHTML = Number(iidade.value)">
+                    <output id="sidade">10</output> <br>
 
-    </form>
+                    <label for="iano">Ano que Nasceu</label> 
+                    <input type="range" name="ano" id="iano" min="1930" max="2023" oninput="seano.innerHTML = Number(iano.value)">
+                    <output id="seano">1930</output>
+                </fieldset>
+            </div>
+
+            <div id="botoes">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">  
+            </div>
+        </form>
+    </div>
+    
 </body>
 </html>
