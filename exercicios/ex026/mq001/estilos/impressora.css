@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Estilos para impressora */
+/* Estilos para Impressora */
 
 * {
     margin: 10px;
@@ -22,5 +22,5 @@ article {
 }
 
 article::after {
-    content: 'Esse artigo foi impresso araves do site www.cursoemvideo.com';
+    content: 'Esse artigo foi impresso atraves do site www.cursoemvideo.com';
 }
