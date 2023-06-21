@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Formularios com Media Query</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inomeu">Nome de Usuario:</label>
+                <input type="text" name="nomeu" id="inomeu" required placeholder="Insira seu nome" minlength="5" maxlength="20">
+            </div>
+            <div>
+                <label for="iseuemail">Email:</label>
+                <input type="email" name="seuemail" id="iseuemail" required>
+            </div>
+            <div>
+                <label for="isuaidade">Sua Idade:</label>
+                <input type="range" name="seuidade" id="isuaidade" required min="17" max="100" oninput="hoay.innerHTML = Number(isuaidade.value)">
+                <output id="hoay">17</output>
+            </div>
+        </fieldset>
+        
+
+
+        <div id="interacoes">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
