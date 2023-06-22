@@ -4,8 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Sriracha&display=swap');
 
-body {
-    font-family: 'Roboto Slab', serif;
-    margin: 0px;
-    padding: 0px;
+@media all {
+    body {
+        font-family: 'Roboto Slab', serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    fieldset {
+        margin: 10px auto;
+        width: 80vw;
+    }
+
+    div#interacoes {
+       display: block;
+       text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
 }

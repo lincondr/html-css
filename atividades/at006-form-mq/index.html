@@ -22,15 +22,29 @@
             <div>
                 <label for="isuaidade">Sua Idade:</label>
                 <input type="range" name="seuidade" id="isuaidade" required min="17" max="100" oninput="hoay.innerHTML = Number(isuaidade.value)">
-                <output id="hoay">17</output>
+                <output id="hoay"></output>
             </div>
         </fieldset>
-        
+        <fieldset>
+            <legend>Materias preferidas</legend>
+            <div>
+                <input type="checkbox" name="materia" id="imat" value="Matematica"> <label for="imat">Matematica</label>
+                <input type="checkbox" name="materia" id="iing" value="Ingles" checked> <label for="iing">Ingles</label>
+                <input type="checkbox" name="materia" id="iport" value="Portugues"> <label for="iport">Portugues</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Curso de interesse</legend>
+            <div>
+                <input type="radio" name="curso" id="ipgm" value="Programaçao" checked> <label for="ipgm">Programaçao</label>
+                <input type="radio" name="curso" id="ien" value="Ingles"> <label for="ien">Ingles</label>
+            </div>
+        </fieldset>
 
 
         <div id="interacoes">
-            <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </div>
     </form>
 </body>
