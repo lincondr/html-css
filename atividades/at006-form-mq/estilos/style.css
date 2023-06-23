@@ -5,18 +5,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Sriracha&display=swap');
 
 @media all {
-    body {
+    * {
         font-family: 'Roboto Slab', serif;
         margin: 0px;
         padding: 0px;
     }
-    h1 {
+
+    body {
+        
+    }
+
+    header {
+        background-color: rgb(69, 167, 134);
         text-align: center;
     }
 
-    fieldset {
+    header h1, p {
+        margin: 0px;
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    form {
+        background-color: lightgray;
         margin: 10px auto;
-        width: 80vw;
+        max-width: 400px;
+        height: 450px;
+        box-shadow:-1px 1px 2px 1px rgba(0, 0, 0, 0.459);
+    }
+
+    fieldset {
+        padding: 10px;
     }
 
     div#interacoes {
