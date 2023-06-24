@@ -9,10 +9,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-body {
-    width: 97vw;
-    height: 97vh;
+html {
+    height: 100vh;
 }
 
 body {
