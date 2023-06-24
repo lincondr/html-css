@@ -1,32 +1,17 @@
 @charset "UTF-8";
 
-/* Todas as demais midias */
+/* Todas as demais medias */
 
-/* Typical Device Breakpoint
-Pequenas telas: ate 600px
-Celular: de 600px ate 768px
-Tablet: 768px ate 992px
-Desktop: 992px ate 1200px
-Grandes telas: acima de 1200px
-*/
 
-@media print { /* Impresssão */
+/* print */
+
+@media print {
     * {
         font-family: 'Courier New', Courier, monospace;
     }
 
-    body {
-        background-image: url(../imagens/back-print.jpg);
-    }
-
     main {
-        width: 90vw;
-        border: 2px solid black;
-    }
-
-    main::after {
-        content: 'Essa impressao foi feita atraves do site www.cursoemvideo.com';
-        text-decoration: overline;
+        border: 1px solid black;
     }
 
     main h1 {
@@ -34,14 +19,22 @@ Grandes telas: acima de 1200px
         color: black;
     }
 
+    main::after {
+        content: 'Esse impressao foi feita atraves do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
     img#phone { display: none; }
     img#tablet { display: none; }
     img#print { display: block; }
     img#pc { display: none; }
     img#tv { display: none; }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+/* Tablets */
+
+@media screen and (min-width:768px) and (max-width: 992px) {
     body {
         background-image: url(../imagens/back-tablet.jpg);
     }
@@ -53,10 +46,12 @@ Grandes telas: acima de 1200px
     img#tv { display: none; }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
-   body {
-    background-image: url(../imagens/back-pc.jpg);
-   }
+/* Desktops */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
 
     img#phone { display: none; }
     img#tablet { display: none; }
@@ -65,13 +60,13 @@ Grandes telas: acima de 1200px
     img#tv { display: none; }
 }
 
-@media screen and (min-width: 1200px) { /* Grandes Telas */
+@media screen and (min-width: 1200px) {
     body {
         background-image: url(../imagens/back-tv.jpg);
     }
 
     main {
-        min-width: 700px;
+        width: 700px;
     }
 
     img#phone { display: none; }
