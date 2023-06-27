@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+
+div#main-picture {
+    background: black url(../imagens/image-2.jpg) no-repeat left center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#main-title {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+}
+
+
+div#main-title > h1 {
+    font-size: 2em;
+    padding: 10px;
+}
+
+.content-section {
+    min-height: 400px;
+    margin-top: 40px;
+    padding: 15px;   
+}
+
+.content-title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.content-title > h2 {
+    font-size: 1.2em;
+}
+
+.content-paragraph {
+    text-indent: 30px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+#content-image1 {
+    background: black url(../imagens/image-3.jpg) no-repeat left center;
+    background-size: cover;
+    height: 350px;
+    width: 95vw;
+    margin: auto;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.397);
+}
+
+#content-image2 {
+    background: black url(../imagens/image-4.jpg) no-repeat left center;
+    background-size: cover;
+    height: 350px;
+    width: 95vw;
+    margin: auto;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.397);
+}
+
+#end-picture {
+    background: url(../imagens/image-1.jpg) left center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.425);
+}
+
+#end-title {
+    background-color: rgba(0, 0, 0, 0.521);
+    color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+}
+
+#end-title h2 {
+    font-size: 1.3em;
+}
