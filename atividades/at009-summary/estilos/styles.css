@@ -12,30 +12,173 @@
 
 body {
     height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 #container {
-    background-color: purple;
-    height: 700px;
+    min-height: 700px;
     width: 100%;
 }
 
 #result-screen {
-    background-color: white;
-    height: 350px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 320px;
+    width: 375px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;  
+}
+
+#your-result {
+    color: rgba(214, 212, 212, 0.836);
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 #score {
+    background-image: linear-gradient(to bottom,  hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0.103));
     text-align: center;
-    height: 100px;
-    padding: 28px;
+    height: 142px;
+    padding: 48px;
     border-radius: 50%;
-    border: 1px solid black;
+}
+
+#final-value {
+    color: white;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+#max-value {
+    padding-top: 10px;
+    color: rgba(214, 212, 212, 0.733);
+    font-weight: 700;
 }
 
 
+#result-message-h2 {
+    text-align: center;
+    padding: 18px 0px 10px 0px;
+    color: white;
+}
+
+#result-message-p {
+    padding-bottom: 15px;
+    color: rgba(214, 212, 212, 0.719);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#summary-section {
+    padding: 20px ;
+}
+
+#summary {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: hsl(224, 41%, 26%);
+}
+
+#tier-box {
+    margin: auto;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tier-box > h1 {
+    align-self: start;
+}
+
+.category {
+    width: 325px;
+    padding: 15px;
+    margin: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    
+    padding: 6px 12px 0px 2px;
+}
+
+#category-1 {
+    background-color: hsla(0, 100%, 67%, 0.123);
+    color: hsla(0, 100%, 67%);
+    width: 325px;
+}
+
+#category-2 {
+    background-color: hsla(39, 100%, 56%, 0.123);
+    color: hsl(39, 100%, 56%);
+    width: 325;
+}
+
+#category-3 {
+    background-color: hsla(166, 100%, 37%, 0.123);
+    color: hsl(166, 100%, 37%);
+    width: 325;
+}
+
+#category-4 {
+    background-color: hsla(234, 85%, 45%, 0.123);
+    color: hsl(234, 85%, 45%);
+    width: 325;
+}
+
+.num {
+    color: gray;
+}
+
+strong {
+    color: black;
+}
+
+#button {
+    background-color: hsl(224, 30%, 27%);
+    width: 325px;
+    border-radius: 20px;
+}
+
+#button:hover {
+    background-color: hsl(220, 11%, 21%);
+    transition-duration: 0.5s;
+}
+
+#button > a {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+#footer-attribution {
+    background-color: rgb(46, 46, 46);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.attribution > p, a {
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    padding: 8px 0px;   
+}
+
+.attribution a {
+    color: white;
+    font-weight: 800;
+}
 
