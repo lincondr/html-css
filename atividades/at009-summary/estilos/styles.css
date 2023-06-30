@@ -15,7 +15,8 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-#container {
+#main-content {
+    background-color: rgb(255, 255, 255);
     min-height: 700px;
     width: 100%;
 }
@@ -148,11 +149,12 @@ strong {
     background-color: hsl(224, 30%, 27%);
     width: 325px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 #button:hover {
-    background-color: hsl(220, 11%, 21%);
-    transition-duration: 0.5s;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    transition-duration: 1s;
 }
 
 #button > a {
