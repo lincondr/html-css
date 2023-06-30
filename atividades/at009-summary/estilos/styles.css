@@ -74,7 +74,7 @@ body {
 }
 
 #summary-section {
-    padding: 20px ;
+    padding: 20px;
 }
 
 #summary {
@@ -85,7 +85,7 @@ body {
 
 #tier-box {
     margin: auto;
-    width: 375px;
+    width: 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
