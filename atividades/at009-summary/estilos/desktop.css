@@ -65,4 +65,8 @@
         text-align: center;
         width: 279px;
     }
+
+    #button {
+        margin-top: 40px;
+    }
 }
