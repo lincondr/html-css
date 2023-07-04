@@ -63,7 +63,7 @@
 
     #result-message-p {
         text-align: center;
-        width: 279px;
+        max-width: 279px;
     }
 
     #button {
