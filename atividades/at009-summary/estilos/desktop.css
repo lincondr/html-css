@@ -69,4 +69,9 @@
     #button {
         margin-top: 40px;
     }
+
+    #button:hover {
+        background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        transition-duration: 1s;
+    }
 }
