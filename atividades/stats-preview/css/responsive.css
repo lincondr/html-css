@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+@media (min-width: 1050px) {
+    #container {
+        height: 600px;
+        min-width: 1000px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main-image {
+        background-position: center;
+        height: 100%;
+        width: 50%;
+    }
+    
+    #container .content-section {
+        width: 430px;
+    }
+
+    .content-section .section-title {
+        text-align: left;
+    }
+
+    .content-section .category-box {
+        display: flex;
+        flex-direction: row;
+        gap: 0px 60px;
+    }
+}
