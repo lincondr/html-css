@@ -2,9 +2,10 @@
 
 
 @media (min-width: 1200px) {
-    #container {
+    #container { 
         height: 530px;
         min-width: 1150px;
+        margin-bottom: 108px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;

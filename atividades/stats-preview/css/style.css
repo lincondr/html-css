@@ -18,8 +18,7 @@ font-family: 'Inter', sans-serif;
 body {
     background-color:  hsl(233, 47%, 7%);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    height: 100vh;
+    font-size: 15px;   
 }
 
 #container {
