@@ -34,7 +34,8 @@ body {
 .main-image {
     background: url('../images/image-header-mobile.jpg') no-repeat center;
     background-size: cover;
-    height: 40%;
+    height: 35%;
+    width: 375px;
 
     position: relative;
 }
@@ -42,7 +43,7 @@ body {
 .main-image::after {
     content: "";
     position: absolute;
-    background-color: hsla(277, 64%, 61%, 0.377);
+    background-color: hsla(277, 69%, 38%, 0.404);
     top: 0;
     left: 0;
     width: 100%;
@@ -52,16 +53,20 @@ body {
 .content-section {
     width: 280px;
     margin: auto;
+}
+
+.box-section {
+    height: 550px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: space-evenly;
 }
 
 .section-title {
     text-align: center;
     color: hsl(0, 0%, 100%);
-    margin: 48px auto 20px auto;
+    margin: 25px auto 20px auto;
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 1.7em;
@@ -90,7 +95,7 @@ body {
     letter-spacing: 1px;
 }
 
-.content-section .category {
+.content-section .box-section .category {
     text-transform: uppercase;
     text-align: center;
     font-size: 0.8em;
@@ -98,28 +103,25 @@ body {
     margin-top: 10px;
 }
 
-
-#footer {
-    background-color:hsl(244, 38%, 16%);
+.footer {
+    background-color: hsl(244, 38%, 16%);
     padding: 10px;
+    margin-bottom: 0;
 }
-
-#footer .links {
-    text-align: center;
+.footer .attribuition {
     color: white;
-    font-weight: 400;
+    text-align: center;
     letter-spacing: 1px;
 }
 
-
-#footer .attribution  a {
+.footer .attribuition a {
     padding: 5px;
-    color: hsl(277, 64%, 61%);
-    text-decoration: none;   
-
+    text-decoration: none;
+    color:  hsl(277, 64%, 61%);
 }
 
-#footer .attribution  a:hover {
-    color: hsl(277, 64%, 74%);
+.footer .attribuition a:hover {
+    color: hsl(277, 48%, 63%);
     font-weight: 700;
+    transition-duration: 0.2s;
 }

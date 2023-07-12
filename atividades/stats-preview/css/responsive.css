@@ -1,31 +1,54 @@
 @charset "UTF-8";
 
 
-@media (min-width: 1050px) {
+@media (min-width: 1200px) {
     #container {
-        height: 600px;
-        min-width: 1000px;
+        height: 530px;
+        min-width: 1150px;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 
     .main-image {
+        background: url('../images/image-header-desktop.jpg') no-repeat center;
         background-position: center;
+        background-size: cover;
         height: 100%;
         width: 50%;
     }
     
     #container .content-section {
         width: 430px;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .box-section {
+        margin-left: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .content-section .section-title {
+        font-size: 2.6em;
+        margin: 50px 0;
         text-align: left;
+        letter-spacing: 1px;
     }
 
     .content-section .category-box {
+        margin: 40px auto;
         display: flex;
         flex-direction: row;
-        gap: 0px 60px;
+        gap: 0px 120px;
     }
+
+    .content-section .section-main-text {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    
 }
