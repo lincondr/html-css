@@ -1,0 +1,52 @@
+@media screen and (min-width: 1440px) {
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        min-width: 1150px;
+        height: 530px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .words-content {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 500px;
+        margin-left: 40px;
+        padding: 20px;
+    }
+
+    .words-content .main-title {
+        font-size: 2.4em;
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .words-content .paragraph {
+        margin-top: 15px;
+        font-size: 1em;
+        width: 400px;
+        text-align: left;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.555);
+    }
+
+    .content-information {
+        font-size: 1em;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 425px;
+    }
+
+    .content .image {
+        background-image: url(../imagens/image-header-desktop.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+    }
+}

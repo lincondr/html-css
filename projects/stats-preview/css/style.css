@@ -16,11 +16,12 @@ font-family: 'Inter', sans-serif;
 
 body {
     font-family:'Lexend Deca', sans-serif;
-    height: 100vh;
-    
+    height: 100vh;   
 }
 
 #container {
+    position: relative;
+    min-height: 100vh;
     background-color:  hsl(233, 47%, 7%);
     color: white;
     padding: 30px;
@@ -33,8 +34,6 @@ body {
     height: 900px;
     border-radius: 20px;
     overflow: hidden;
-    padding-bottom: 25px;
-    
 }
 
 .content .image {
@@ -42,8 +41,8 @@ body {
     background-image: url(../imagens/image-header-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40%;
-    width: 375px;
+    min-height: 275px;
+    min-width: 375px;
     position: relative;
 }
 
