@@ -3,12 +3,12 @@ function carregar() {
     var tnum = document.getElementById('txtnum')
     var nm = Number(tnum.value)
     var crew = document.getElementById('crew-name')
-    if (nm = 3) {
-        crew.innerHTML = `Sanji - ${nm}`
-        img.src = 'imagens/Sanji.png'
-        document.body.style.background = '#f4f75c'
+    if (nm = 1) {
+        crew.innerHTML = `Luffy - ${nm}`
+        img.src = 'imagens/luffy.png'
+        document.body.style.background = '#ee7979'
     }
-   
+
 
 }
 
@@ -26,7 +26,7 @@ function clicou() {
         case 2:
             img.src = 'imagens/zoro.png'
             crew.innerHTML = `Zoro - ${nm}`
-            document.body.style.background = '#57ca34' 
+            document.body.style.background = '#57ca34'
             break
         case 3:
             img.src = 'imagens/sanji.png'
@@ -63,6 +63,10 @@ function clicou() {
             crew.innerHTML = `Brook - ${nm}`
             document.body.style.background = '#3b017286'
             break
+        default:
+            img.src = 'imagens/luffy5.png'
+            crew.innerHTML = 'Secret luffy Gear 5'
+            document.body.style.background = 'linear-gradient(to right, #d6d2d2, #5e6df596)'
     }
 }
 
